@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF2424A12311450B00656603 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = EF2424952310E9C300656603 /* test.c */; };
+		EF466939231222B500FCFB87 /* stock.h in Sources */ = {isa = PBXBuildFile; fileRef = EF466938231222B500FCFB87 /* stock.h */; };
+		EF46693C23122A4500FCFB87 /* linkQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = EF46693B23122A4500FCFB87 /* linkQueue.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,11 @@
 		EF2424952310E9C300656603 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 		EF24249C2311355F00656603 /* StockNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockNode.h; sourceTree = "<group>"; };
 		EF24249D2311355F00656603 /* StockNode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StockNode.c; sourceTree = "<group>"; };
+		EF4669342312194F00FCFB87 /* queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		EF4669352312194F00FCFB87 /* queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = queue.c; sourceTree = "<group>"; };
+		EF466938231222B500FCFB87 /* stock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stock.h; sourceTree = "<group>"; };
+		EF46693A23122A4500FCFB87 /* linkQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkQueue.h; sourceTree = "<group>"; };
+		EF46693B23122A4500FCFB87 /* linkQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linkQueue.c; sourceTree = "<group>"; };
 		EFC03F232308FB0500CE6562 /* cStudy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cStudy; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,9 +58,22 @@
 			path = stack;
 			sourceTree = "<group>";
 		};
+		EF466933231218A600FCFB87 /* queue */ = {
+			isa = PBXGroup;
+			children = (
+				EF4669342312194F00FCFB87 /* queue.h */,
+				EF4669352312194F00FCFB87 /* queue.c */,
+				EF466938231222B500FCFB87 /* stock.h */,
+				EF46693A23122A4500FCFB87 /* linkQueue.h */,
+				EF46693B23122A4500FCFB87 /* linkQueue.c */,
+			);
+			path = queue;
+			sourceTree = "<group>";
+		};
 		EFC03F1A2308FB0500CE6562 = {
 			isa = PBXGroup;
 			children = (
+				EF466933231218A600FCFB87 /* queue */,
 				EF2424932310E99C00656603 /* stack */,
 				EFC03F242308FB0500CE6562 /* Products */,
 			);
@@ -124,7 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2424A12311450B00656603 /* test.c in Sources */,
+				EF46693C23122A4500FCFB87 /* linkQueue.c in Sources */,
+				EF466939231222B500FCFB87 /* stock.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
